@@ -3,8 +3,10 @@
  * Date: 06/25/2024
  * Description: Functions related to the breakable fence
  */
+
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
 
 public class Breakable : Interactable
@@ -26,17 +28,7 @@ public class Breakable : Interactable
     /// </summary>
     BoxCollider bc;
 
-    /// <summary>
-    /// Override the Interact() from Interactable base class
-    /// </summary>
-    public override void Interact(Player thePlayer)
-    {
-        // Call the Interact function from the base Interactable class.
-        base.Interact(thePlayer);
-
-        //Call BreakFence() function
-        BreakFence();
-    }
+    public float health;
 
     /// <summary>
     /// Hide broken fence and show normal fence when game starts
@@ -66,5 +58,19 @@ public class Breakable : Interactable
 
         //Disable the BoxCollider to prevent any more interactions after broken
         bc.enabled = false;
+    }
+
+    /// <summary>
+    /// Break fence when hit with gun
+    /// </summary>
+    /// <param name="amount"></param>
+    public void TakeDamage(float amount)
+    {
+        // Deduct health from gun damage
+        health -= amount;
+        if (health <= 0f) 
+        {
+            BreakFence();
+        }
     }
 }
