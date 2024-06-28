@@ -1,7 +1,7 @@
 /*
  * Author: Jacie Thoo Yixuan
  * Date: 06/26/2024
- * Description: Functions related to the crate that will spawn a collectible after interacted with
+ * Description: Functions related to the crate that will spawn a collectible after being shot at
  */
 
 using System.Collections;
@@ -23,17 +23,21 @@ public class Crate : Interactable
     private AudioClip crateAudio;
 
     /// <summary>
-    /// override base interact function
+    /// Health of the crate
     /// </summary>
-    /// <param name="thePlayer"></param>
-    public override void Interact(Player thePlayer)
-    {
-        // Call the Interact function from the base Interactable class
-        base.Interact(thePlayer);
+    public float health;
 
-        SpawnCollectible();
-        //Destroy crate after spawning collectible
-        Destroy(gameObject);
+    /// <summary>
+    /// Field to hold BoxCollider
+    /// </summary>
+    BoxCollider bc;
+
+    /// <summary>
+    /// Get BoxCollider component and store in bc when gaame starts
+    /// </summary>
+    private void Awake()
+    {
+        bc = GetComponent<BoxCollider>();
     }
 
     /// <summary>
@@ -44,5 +48,20 @@ public class Crate : Interactable
     {
         AudioSource.PlayClipAtPoint(crateAudio, transform.position, 1f);
         Instantiate(collectibleToSpawn, transform.position, collectibleToSpawn.transform.rotation);
+    }
+
+    /// <summary>
+    /// Crate takes damage and breaks when health becomes 0
+    /// </summary>
+    /// <param name="amount"></param>
+    public void TakeDamage(float amount)
+    {
+        // Deduct health from gun damage
+        health -= amount;
+        if (health <= 0f)
+        {
+            SpawnCollectible();
+            Destroy(gameObject);
+        }
     }
 }
