@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &1549884129481518172
+--- !u!1001 &516200108589123100
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -26,17 +26,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: c1790eb01eb4b0241a1eb9c31b1cd86f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -286.83783
+      value: -286.0222
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c1790eb01eb4b0241a1eb9c31b1cd86f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 48.694
+      value: 48.7
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c1790eb01eb4b0241a1eb9c31b1cd86f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 317.66382
+      value: 319.79608
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c1790eb01eb4b0241a1eb9c31b1cd86f,
         type: 3}
@@ -86,5 +86,53 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c1790eb01eb4b0241a1eb9c31b1cd86f,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2721034508916910475}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c1790eb01eb4b0241a1eb9c31b1cd86f,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5038151724010078385}
   m_SourcePrefab: {fileID: 100100000, guid: c1790eb01eb4b0241a1eb9c31b1cd86f, type: 3}
+--- !u!1 &858077095403993933 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c1790eb01eb4b0241a1eb9c31b1cd86f,
+    type: 3}
+  m_PrefabInstance: {fileID: 516200108589123100}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2721034508916910475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 858077095403993933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d83c510e2a177c748b3016bdf5cf6ce2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collectAudio: {fileID: 8300000, guid: 63a6b371b7be9cf41acd44702377bb1a, type: 3}
+--- !u!65 &5038151724010078385
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 858077095403993933}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.1245724, y: 1.6657948, z: 1.1245703}
+  m_Center: {x: 0, y: 0.000000029802322, z: 0}

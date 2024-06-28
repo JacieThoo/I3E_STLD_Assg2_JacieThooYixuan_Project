@@ -6,6 +6,8 @@ TagManager:
   tags:
   - CinemachineTarget
   - Waypoints
+  - Metal
+  - Potion
   layers:
   - Default
   - TransparentFX

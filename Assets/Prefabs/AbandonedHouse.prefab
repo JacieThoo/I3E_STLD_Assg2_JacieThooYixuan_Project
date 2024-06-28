@@ -5049,6 +5049,7 @@ GameObject:
   - component: {fileID: 5080768722895003128}
   - component: {fileID: 8794705584192252680}
   - component: {fileID: 4259755905000719979}
+  - component: {fileID: 5421877695955722649}
   m_Layer: 0
   m_Name: Cube (14)
   m_TagString: Untagged
@@ -5388,6 +5389,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!114 &5421877695955722649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3206696415732263215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ab034afdb89b7d4f8ea96c6ee14916b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collectibleToSpawn: {fileID: 4826111534896868730, guid: c327ff39b4d5e774fa97d5f6b01b8750,
+    type: 3}
+  crateAudio: {fileID: 8300000, guid: 662dc3489d4a6ad4ea30d6133c44b655, type: 3}
+  health: 10
 --- !u!1 &3301378407825573379
 GameObject:
   m_ObjectHideFlags: 0
