@@ -74,7 +74,13 @@ public class Gun : MonoBehaviour
             {
                 breakable.TakeDamage(damage);
             }
-        }
 
+            //Check if object is a crate
+            Crate crate = hit.transform.GetComponent<Crate>();
+            if (crate != null)
+            {
+                crate.TakeDamage(damage);
+            }
+        }
     }
 }
