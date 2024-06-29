@@ -8,6 +8,7 @@ TagManager:
   - Waypoints
   - Metal
   - Potion
+  - Battery
   layers:
   - Default
   - TransparentFX
