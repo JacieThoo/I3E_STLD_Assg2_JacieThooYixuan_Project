@@ -5864,7 +5864,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa52e931ce3cf9a41924ae31abde2b94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetSceneIndex: 2
+  targetSceneIndex: 4
 --- !u!64 &1953941150
 MeshCollider:
   m_ObjectHideFlags: 0

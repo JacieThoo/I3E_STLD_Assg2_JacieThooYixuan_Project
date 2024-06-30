@@ -21,6 +21,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Tunnel.unity
     guid: 10c806324f5698647a43772cc75384b1
   - enabled: 1
+    path: Assets/Scenes/Main 1.unity
+    guid: c98a1b6171de20a49a2c1c8322c28636
+  - enabled: 1
     path: Assets/Scenes/Tower.unity
     guid: 63a40ad5a92002e4ca82283e7dc02017
+  - enabled: 1
+    path: Assets/Scenes/Win.unity
+    guid: 072029cc475abf847912ff9d5d5cbad2
   m_configObjects: {}
