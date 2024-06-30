@@ -1,6 +1,13 @@
+/*
+ * Author: Jacie Thoo Yixuan
+ * Date: 06/28/2024
+ * Description: Functions related to the broken crystal
+ */
+
 using System.Collections;
 using System.Collections.Generic;
 using System.Net.Sockets;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class BrokenCrystal : Interactable
@@ -16,6 +23,7 @@ public class BrokenCrystal : Interactable
 
         // Attempt to place special collectible
         PlaceSpecialCollectible();
+        SceneManager.LoadScene(6);
     }
 
     /// <summary>

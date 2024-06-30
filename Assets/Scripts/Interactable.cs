@@ -1,3 +1,9 @@
+/*
+ * Author: Jacie Thoo Yixuan
+ * Date: 06/24/2024
+ * Description: Functions related to the interactables
+ */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

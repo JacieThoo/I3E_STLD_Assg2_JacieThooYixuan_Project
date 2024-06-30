@@ -1,3 +1,9 @@
+/*
+ * Author: Jacie Thoo Yixuan
+ * Date: 06/28/2024
+ * Description: Functions related to the special collectible
+ */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

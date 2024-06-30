@@ -27,6 +27,11 @@ public class Mob : MonoBehaviour
     public Image healthBarImage;
 
     /// <summary>
+    /// Amount of damage the mob does to the player
+    /// </summary>
+    public float attackDamage;
+
+    /// <summary>
     /// Update the health bar when the game starts
     /// </summary>
     void Start()
@@ -71,5 +76,14 @@ public class Mob : MonoBehaviour
     {
         float fillAmount = currentHealth / maxHealth;
         healthBarImage.fillAmount = fillAmount;
+    }
+
+    /// <summary>
+    /// When player enters the trigger area, harm the player
+    /// </summary>
+    /// <param name="other"></param>
+    private void OnTriggerEnter(Collider other)
+    {
+        GameManager.Instance.TakeDamage(attackDamage);
     }
 }

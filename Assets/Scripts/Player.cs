@@ -1,3 +1,9 @@
+/*
+ * Author: Jacie Thoo Yixuan
+ * Date: 06/24/2024
+ * Description: Functions related to the player
+ */
+
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -44,18 +50,18 @@ public class Player : MonoBehaviour
             if (hitInfo.transform.TryGetComponent<Interactable>(out currentInteractable))
             {
                 //show text when looking at object with raycast
-                interactionText.gameObject.SetActive(true);
+                //interactionText.gameObject.SetActive(true);
             }
             else
             {
-                currentInteractable = null;
-                interactionText.gameObject.SetActive(false);
+                //currentInteractable = null;
+                //interactionText.gameObject.SetActive(false);
             }
         }
         else
         {
-            currentInteractable = null;
-            interactionText.gameObject.SetActive(false);
+            //currentInteractable = null;
+            //interactionText.gameObject.SetActive(false);
         }
     }
 
